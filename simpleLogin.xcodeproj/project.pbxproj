@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		C70D25D81CF1045300478952 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70D25D71CF1045300478952 /* AppDelegate.swift */; };
-		C70D25DA1CF1045300478952 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70D25D91CF1045300478952 /* ViewController.swift */; };
-		C70D25DD1CF1045300478952 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C70D25DB1CF1045300478952 /* Main.storyboard */; };
 		C70D25DF1CF1045300478952 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C70D25DE1CF1045300478952 /* Assets.xcassets */; };
 		C70D25E21CF1045300478952 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C70D25E01CF1045300478952 /* LaunchScreen.storyboard */; };
+		C70D25EC1CF10A2200478952 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C70D25EB1CF10A2200478952 /* Login.storyboard */; };
+		C70D25EE1CF10B9800478952 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70D25ED1CF10B9800478952 /* LoginViewController.swift */; };
+		C73FB08F1CF223AB0088CA8D /* InicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73FB08E1CF223AB0088CA8D /* InicioViewController.swift */; };
+		C73FB0911CF224010088CA8D /* DetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73FB0901CF224010088CA8D /* DetalleViewController.swift */; };
+		C73FB0931CF225410088CA8D /* Inicio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C73FB0921CF225410088CA8D /* Inicio.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C70D25D41CF1045200478952 /* simpleLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = simpleLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C70D25D71CF1045300478952 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C70D25D91CF1045300478952 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C70D25DC1CF1045300478952 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C70D25DE1CF1045300478952 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C70D25E11CF1045300478952 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C70D25E31CF1045300478952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C70D25EB1CF10A2200478952 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		C70D25ED1CF10B9800478952 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C73FB08E1CF223AB0088CA8D /* InicioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InicioViewController.swift; sourceTree = "<group>"; };
+		C73FB0901CF224010088CA8D /* DetalleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleViewController.swift; sourceTree = "<group>"; };
+		C73FB0921CF225410088CA8D /* Inicio.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Inicio.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,11 +60,14 @@
 		C70D25D61CF1045300478952 /* simpleLogin */ = {
 			isa = PBXGroup;
 			children = (
-				C70D25D71CF1045300478952 /* AppDelegate.swift */,
-				C70D25D91CF1045300478952 /* ViewController.swift */,
-				C70D25DB1CF1045300478952 /* Main.storyboard */,
 				C70D25DE1CF1045300478952 /* Assets.xcassets */,
+				C70D25D71CF1045300478952 /* AppDelegate.swift */,
+				C70D25ED1CF10B9800478952 /* LoginViewController.swift */,
+				C73FB08E1CF223AB0088CA8D /* InicioViewController.swift */,
+				C73FB0901CF224010088CA8D /* DetalleViewController.swift */,
+				C73FB0921CF225410088CA8D /* Inicio.storyboard */,
 				C70D25E01CF1045300478952 /* LaunchScreen.storyboard */,
+				C70D25EB1CF10A2200478952 /* Login.storyboard */,
 				C70D25E31CF1045300478952 /* Info.plist */,
 			);
 			path = simpleLogin;
@@ -91,11 +100,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Rober Martinez";
 				TargetAttributes = {
 					C70D25D31CF1045200478952 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -124,7 +134,8 @@
 			files = (
 				C70D25E21CF1045300478952 /* LaunchScreen.storyboard in Resources */,
 				C70D25DF1CF1045300478952 /* Assets.xcassets in Resources */,
-				C70D25DD1CF1045300478952 /* Main.storyboard in Resources */,
+				C70D25EC1CF10A2200478952 /* Login.storyboard in Resources */,
+				C73FB0931CF225410088CA8D /* Inicio.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C70D25DA1CF1045300478952 /* ViewController.swift in Sources */,
+				C73FB0911CF224010088CA8D /* DetalleViewController.swift in Sources */,
+				C70D25EE1CF10B9800478952 /* LoginViewController.swift in Sources */,
+				C73FB08F1CF223AB0088CA8D /* InicioViewController.swift in Sources */,
 				C70D25D81CF1045300478952 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,14 +156,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C70D25DB1CF1045300478952 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C70D25DC1CF1045300478952 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C70D25E01CF1045300478952 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -255,6 +260,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.com.rmb.simpleLogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -266,6 +272,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.com.rmb.simpleLogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -288,6 +296,7 @@
 				C70D25E81CF1045300478952 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
